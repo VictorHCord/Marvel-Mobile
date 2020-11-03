@@ -122,7 +122,7 @@ const ListMarvelPage: React.FC = () => {
     <Container>
       <ScrollView>
         <Recipes>
-          <TextMarvelTitle> Marvel </TextMarvelTitle>
+          <TextMarvelTitle>Marvel</TextMarvelTitle>
 
           <RectButton style={style.ButtonPower} onPress={() => {
             loadReset()
@@ -137,14 +137,14 @@ const ListMarvelPage: React.FC = () => {
             <Icon name="search" size={20} color="#000" />
           </RectButton>
         </Recipes>
-        <SubTitleMarvel> Comics</SubTitleMarvel>
+        <SubTitleMarvel>Comics</SubTitleMarvel>
 
 
         <TextInput placeholder="Search here" clearButtonMode="always" value={heroe} onChangeText={(text) => setHeroe(text)} />
 
 
 
-        {datas.results.sort() && datas.results.length > 0 && datas.results.map(({ name, id, thumbnail, description }) => ((
+        {datas.results.length > 0 && datas.results.map(({ name, id, thumbnail, description }) => ((
           <RecipeHeroes   style={style.boxShadow} key={String(id)}>
 
 
