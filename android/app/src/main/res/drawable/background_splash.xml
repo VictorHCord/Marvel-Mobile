@@ -4,8 +4,8 @@
     android:drawable="@color/splashscreen_bg"/>
 
   <item
-    android:width="149dp"
-    android:height="56dp"
+    android:width="303dp"
+    android:height="114dp"
     android:drawable="@mipmap/marvel"
     android:gravity="center" />
 </layer-list>
