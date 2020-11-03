@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "standard",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "prettier/standard",
+        "prettier/prettier",
+        "prettier/react"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+        "import/prefer-default-export": "off",
+        "prettier/prettier": ["error", {
+            "endOfLine":"auto"
+          }],
+        "react/state-in-constructor": "off",
+        "react/jsx-props-no-spreading": "off",
+        "space-before-function-paren": "off",
+        "react/prop-types": "off",
+        "camelcase": "off",
+        "no-param-reassign": "off",
+        "no-console": "off",
+        "@typescript-eslint/camelcase": "off",
+        "no-use-before-define": [0],
+        "@typescript-eslint/no-use-before-define" : [1],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+        
+    }
+}
